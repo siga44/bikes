@@ -1,0 +1,599 @@
+@import "./normalize";
+@import "./vars";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap&subset=latin-ext");
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bgs/top-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  &__nav {
+    z-index: 10;
+    padding-top: 40px;
+  }
+  &__small-logo {
+    display: none;
+  }
+}
+
+.menu {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  &__item {
+    cursor: pointer;
+    color: $primaryDark;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 5px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.222s ease-in-out;
+    &:hover {
+      border-bottom: 2px solid $green;
+    }
+    &-logo {
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.title {
+  color: $primaryDark;
+  text-align: center;
+  font-family: Lato, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.text {
+  text-align: center;
+  padding: 0 20px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: $secondaryDark;
+  line-height: 24px;
+}
+
+.about {
+  height: 470px;
+  width: 100%;
+  background-color: $lightBg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    max-width: 1080px;
+    height: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  &__title {
+    text-align: center;
+    color: $primaryDark;
+    font-family: Lato, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: $secondaryDark;
+    font-family: Lato, Arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+
+.card {
+  position: relative;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 66.667%;
+  justify-content: space-evenly;
+  align-items: center;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin: 0 0 0 -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+  }
+}
+
+.underline {
+  height: 2px;
+  width: 60px;
+  background-color: $secondaryDark;
+}
+
+.first-company {
+  width: 100%;
+  height: 600px;
+  &__content {
+    display: flex;
+  }
+
+  &__left {
+    position: relative;
+    height: 600px;
+    background-image: url("../img/bgs/second-block-big.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex: 1 0 66.666%;
+  }
+
+  &__left img {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-59px) translateX(-59px);
+    left: 50%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 33.334%;
+  }
+
+  &__text {
+    text-align: center;
+    padding: 0 20px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $secondaryDark;
+    line-height: 24px;
+  }
+
+  &__lower {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 33.333%;
+    background-image: url("../img/bgs/second-block-small.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.second-company {
+  width: 100%;
+  height: 600px;
+  &__content {
+    display: flex;
+  }
+
+  &__right {
+    position: relative;
+    height: 600px;
+    background-image: url("../img/bgs/la-boriosa-bicycle.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex: 1 0 66.666%;
+    order: 1;
+  }
+
+  &__right img {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-88.5px) translateX(-88.5px);
+    left: 50%;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 33.334%;
+  }
+
+  .underline {
+    height: 2px;
+    width: 60px;
+    background-color: $secondaryDark;
+  }
+
+  &__lower {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 33.333%;
+    background-image: url("../img/bgs/la-boriosa-seat.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.third-company {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  &__left {
+    position: relative;
+    flex: 1 0 33.333%;
+    background-image: url("../img/bgs/third-company-left.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__left img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-104px) translateY(-104px);
+  }
+
+  &__center {
+    flex: 1 0 33.333%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .underline {
+    height: 2px;
+    width: 60px;
+    background-color: $secondaryDark;
+  }
+
+  &__lower {
+    height: 200px;
+    background-image: url("../img/bgs/third-company-center.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__right {
+    background-image: url("../img/bgs/third-company-right.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 0 33.333%;
+  }
+}
+
+.twitter {
+  width: 100%;
+  height: 470px;
+  background-color: $lightBg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__content {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__title {
+    text-transform: none;
+  }
+  .light {
+    color: $secondaryDark;
+    font-weight: 300;
+  }
+  &__text {
+    font-style: italic;
+  }
+  .circles {
+    width: 50px;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .circle:first-of-type {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $secondaryDark;
+  }
+  .circle {
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid $secondaryDark;
+  }
+}
+
+.shop-section {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  &__left {
+    height: 100%;
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    &-top {
+      display: flex;
+      width: 100%;
+      height: 50%;
+      &-left {
+        width: 50%;
+        height: 100%;
+        background-image: url("../img/bgs/seat-left-left-top.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &-right {
+        width: 50%;
+        height: 100%;
+        background-image: url("../img/bgs/seat-left-right-top.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    &-lower {
+      width: 100%;
+      height: 50%;
+      background-image: url("../img/bgs/seat-left-lower.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__center {
+    display: flex;
+    height: 100%;
+    width: 33.334%;
+    &-left {
+      height: 100%;
+      width: 50%;
+      background-image: url("../img/bgs/bike-center-left.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &-right {
+      height: 100%;
+      width: 50%;
+      background-image: url("../img/bgs/bike-center-right.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__right {
+    height: 100%;
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    &-top {
+      cursor: pointer;
+      position: relative;
+      height: 50%;
+      width: 100%;
+      background-image: url("../img/bgs/room-right-top.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: none;
+        transition: background-color 0.222s ease-in-out;
+      }
+      &:hover::after {
+        background-color: rgba($green, 0.8);
+      }
+    }
+    &-top img {
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-49px) translateY(-49px);
+    }
+    &-lower {
+      display: flex;
+      width: 100%;
+      height: 50%;
+      &-left {
+        width: 50%;
+        height: 100%;
+        background-image: url("../img/bgs/seat-right-lower-left.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &-right {
+        width: 50%;
+        height: 100%;
+        background-image: url("../img/bgs/bag-right-lower-right.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.discover {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primaryDark;
+  &__button {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: Lato, Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: background-color 0.222s ease-in-out;
+    &:hover {
+      background-color: $green;
+    }
+  }
+}
+
+.subscribe {
+  height: 470px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rhba(0, 0, 0, 0.3);
+  &__content {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__title {
+    color: $secondaryDark;
+    font-family: Lato, Aria, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+
+  &__form {
+    font-family: Lato, Aria, sans-serif;
+    width: 33.333%;
+    min-width: 534px;
+    display: flex;
+    justify-content: space-evenly;
+    & input {
+      margin-right: 8px;
+      color: $secondaryDark;
+      font-style: italic;
+      box-sizing: border-box;
+      width: 400px;
+      height: 68px;
+      border: 1px solid $secondaryDark;
+      padding: 0 28px;
+      transition: border, font-size 0.222s ease-in-out;
+      &:focus {
+        border: 1px solid $green;
+        color: $primaryDark;
+        font-size: 18px;
+      }
+    }
+    & button {
+      cursor: pointer;
+      color: white;
+      background-color: $green;
+      text-align: center;
+      width: 128px;
+      height: 68px;
+      font-size: 20px;
+      font-weight: 300;
+      border: 1px solid $green;
+    }
+  }
+}
+
+.footer {
+  background-color: $lightBg;
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  &__row {
+    padding: 0 20px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__column {
+    flex: 0 1 33.333%;
+    &:last-of-type {
+      transform: translateX(130px);
+      width: 130px;
+    }
+  }
+
+  &__adress {
+    font-family: Lato, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $secondaryDark;
+    font-style: italic;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+      margin: 0 5px;
+    }
+  }
+
+  &__author {
+    font-family: Lato, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $secondaryDark;
+    font-style: italic;
+    font-weight: 400;
+    & a {
+      color: $secondaryDark;
+      text-decoration: underline;
+    }
+  }
+}
+
+@import "./tab"; // Resolution lower than 1024px
+
+@import "./mobile"; // Resolution lower than 768px

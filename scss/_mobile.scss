@@ -1,0 +1,120 @@
+@media (max-width: 767px) {
+  .header {
+    height: 100vh;
+  }
+  .about {
+    height: 80vh;
+    &__content {
+      height: 100%;
+    }
+  }
+  .card::after {
+    display: none;
+  }
+  .first-company {
+    height: 100vh;
+    &__content {
+      height: 100%;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+    }
+
+    &__left {
+      height: 33.33%;
+      flex: none;
+    }
+
+    &__left img {
+      transform: translateY(-59px) translateX(-59px) scale(0.75);
+    }
+
+    &__lower {
+      display: none;
+    }
+  }
+  .second-company {
+    height: 100vh;
+    &__content {
+      height: 100%;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+    }
+
+    &__right {
+      height: 33.33%;
+      flex: none;
+      order: 0;
+    }
+
+    &__right img {
+      transform: translateY(-88.5px) translateX(-88.5px) scale(0.75);
+    }
+    &__lower {
+      display: none;
+    }
+  }
+  .third-company {
+    height: 100vh;
+    flex-direction: column;
+    &__left {
+      height: 33.33%;
+      flex: none;
+    }
+    &__right,
+    &__lower {
+      display: none;
+    }
+  }
+  .shop-section {
+    height: 50vh;
+    &__center {
+      width: 100%;
+      height: 100%;
+    }
+    &__right,
+    &__left {
+      display: none;
+    }
+  }
+  .discover {
+    height: 50vh;
+  }
+  .subscribe {
+    height: 100vh;
+    &__form {
+      min-width: 300px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      & input {
+        margin: 0 0 8px 0;
+        text-align: center;
+        width: 100%;
+      }
+      & button {
+        width: 100%;
+      }
+    }
+  }
+  .footer {
+    &__row {
+      padding: 20px 0;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &__adress {
+      text-align: center;
+      line-height: 24px;
+    }
+    &__column {
+      flex: none;
+    }
+    &__author {
+      line-height: 24px;
+      text-align: center;
+      transform: translateX(-130px);
+    }
+  }
+}

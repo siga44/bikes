@@ -53,7 +53,7 @@
           />
         </div>
         <div class="first-company__right">
-          <div class="first-company__upper">
+          <div class="card first-company__upper">
             <img
               src="./img/trans/third-block-icon.png"
               alt="first-company icon"
@@ -81,7 +81,7 @@
           />
         </div>
         <div class="second-company__left">
-          <div class="second-company__upper">
+          <div class="card second-company__upper">
             <img
               src="./img/trans/la-boriosa-icon.png"
               alt="second-company icon"
@@ -106,7 +106,7 @@
         <img src="./img/trans/third-company-logo.png" alt="m.hulot logo" />
       </div>
       <div class="third-company__center">
-        <div class="third-company__upper">
+        <div class="card third-company__upper">
           <img src="./img/trans/third-company-icon.png" alt="m.hulot icon" />
           <h3 class="title third-company__title">Retrò Bike - M. Hulot</h3>
           <div class="text third-company__text">
@@ -172,27 +172,39 @@
           </div>
           <h3 class="subscribe__title">Stay on the saddle!</h3>
           <form class="subscribe__form">
-          <input type="email" placeholder="enter your email...">
-          <button type="submit">GO</button>
+          <input class = "subscribe__input" autocomplete="off" name="form[]" type="email" placeholder="enter your email...">
+          <button class = "subscribe__button" type="submit">GO</button>
         </form>
       </div>
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="footer__content"><div class="footer__adress">
+        <div class="footer__row">
+          <div class="footer__column">
+            <div class="footer__adress">
             <h3 class="footer__adress-title">AOD New York</h3>
             <p class="footer__adress-text">2250 Lexingston Avenue</p>
             <p class="footer__adress-text">New York, NY 10035 - info@domain.com</p>
+            </div>
           </div>
-          <div class="footer__social">
-            <img src="./img/trans/twitter-circle-icon.png" alt="Twitter">
-            <img src="./img/trans/facebook-circle-icon.png" alt="Facebook">
-            <img src="./img/trans/pinterest-circle-icon.png" alt="Pinterest">
+          <div class="footer__column">
+            <div class="footer__social">
+              <img src="./img/trans/twitter-circle-icon.png" alt="Twitter">
+              <img src="./img/trans/facebook-circle-icon.png" alt="Facebook">
+              <img src="./img/trans/pinterest-circle-icon.png" alt="Pinterest">
+            </div>
           </div>
-          <h4 class="footer__author">Handcrafted by</h4>
-        </div> 
+          <div class="footer__column">
+            <h4 class="footer__author">
+              Handcrafted by <a target="_blank" href="https://dribbble.com/yebo">YEBO</a>
+              <br>
+              Layout by <a target="_blank" href="https://vk.com/id46837878">seregqa</a>
+            </h4>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
+
