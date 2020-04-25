@@ -2,6 +2,10 @@
 @import "./vars";
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap&subset=latin-ext");
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
