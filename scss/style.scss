@@ -13,7 +13,7 @@ a {
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/bgs/top-bg.jpg");
+  background-image: url("../img/bgs/top-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -152,7 +152,7 @@ a {
   &__left {
     position: relative;
     height: 600px;
-    background-image: url("../img/bgs/second-block-big.jpg");
+    background-image: url("../img/bgs/second-block-big.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1 0 33.333%;
-    background-image: url("../img/bgs/second-block-small.jpg");
+    background-image: url("../img/bgs/second-block-small.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,7 +205,7 @@ a {
   &__right {
     position: relative;
     height: 600px;
-    background-image: url("../img/bgs/la-boriosa-bicycle.jpg");
+    background-image: url("../img/bgs/la-boriosa-bicycle.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -238,7 +238,7 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1 0 33.333%;
-    background-image: url("../img/bgs/la-boriosa-seat.jpg");
+    background-image: url("../img/bgs/la-boriosa-seat.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -252,7 +252,7 @@ a {
   &__left {
     position: relative;
     flex: 1 0 33.333%;
-    background-image: url("../img/bgs/third-company-left.jpg");
+    background-image: url("../img/bgs/third-company-left.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -279,14 +279,14 @@ a {
 
   &__lower {
     height: 200px;
-    background-image: url("../img/bgs/third-company-center.jpg");
+    background-image: url("../img/bgs/third-company-center.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   &__right {
-    background-image: url("../img/bgs/third-company-right.jpg");
+    background-image: url("../img/bgs/third-company-right.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -355,7 +355,7 @@ a {
       &-left {
         width: 50%;
         height: 100%;
-        background-image: url("../img/bgs/seat-left-left-top.jpg");
+        background-image: url("../img/bgs/seat-left-left-top.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -363,7 +363,7 @@ a {
       &-right {
         width: 50%;
         height: 100%;
-        background-image: url("../img/bgs/seat-left-right-top.jpg");
+        background-image: url("../img/bgs/seat-left-right-top.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -372,7 +372,7 @@ a {
     &-lower {
       width: 100%;
       height: 50%;
-      background-image: url("../img/bgs/seat-left-lower.jpg");
+      background-image: url("../img/bgs/seat-left-lower.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -386,7 +386,7 @@ a {
     &-left {
       height: 100%;
       width: 50%;
-      background-image: url("../img/bgs/bike-center-left.jpg");
+      background-image: url("../img/bgs/bike-center-left.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -394,7 +394,7 @@ a {
     &-right {
       height: 100%;
       width: 50%;
-      background-image: url("../img/bgs/bike-center-right.jpg");
+      background-image: url("../img/bgs/bike-center-right.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -411,7 +411,7 @@ a {
       position: relative;
       height: 50%;
       width: 100%;
-      background-image: url("../img/bgs/room-right-top.jpg");
+      background-image: url("../img/bgs/room-right-top.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -441,7 +441,7 @@ a {
       &-left {
         width: 50%;
         height: 100%;
-        background-image: url("../img/bgs/seat-right-lower-left.jpg");
+        background-image: url("../img/bgs/seat-right-lower-left.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -449,7 +449,7 @@ a {
       &-right {
         width: 50%;
         height: 100%;
-        background-image: url("../img/bgs/bag-right-lower-right.jpg");
+        background-image: url("../img/bgs/bag-right-lower-right.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
